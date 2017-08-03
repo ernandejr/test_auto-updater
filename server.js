@@ -52,7 +52,7 @@ var autoupdater = new AutoUpdater({
 	});
 	autoupdater.fire('check');
     res.writeHead(200, {"Content-Type": "text/xml"});
-    var hello = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><main>Versão atualizada</main>';
+    var hello = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><main>Versão atualizada 0.0.3</main>';
     res.end(hello);
 }).listen(3000, 'localhost', function(){
 	console.log("Servidor rodando na porta 3000");
