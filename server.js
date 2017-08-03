@@ -53,7 +53,7 @@ autoupdater.on('error', function(name, e) {
 });
 autoupdater.fire('check');
     res.writeHead(200, {"Content-Type": "text/xml"});
-    var hello = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><main>Hello Word</main>';
+    var hello = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><main>Testando update</main>';
     res.end(hello);
 }).listen(3000, 'localhost', function(){
 	console.log("Servidor rodando na porta 3000");
