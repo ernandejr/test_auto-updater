@@ -1,7 +1,7 @@
 {
 	"version":"0.0.1",
 	"auto-updater":{
-		"repo":"/github-user/github-repo",
+		"repo":"https://github.com/ernandejr/test_auto-updater",
 		"branch":"master"
 	}
 }
