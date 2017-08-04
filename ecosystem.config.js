@@ -15,14 +15,13 @@ module.exports = {
       env_production : {
         NODE_ENV: 'production'
       }
+    },
+    {
+      "watch": ["server", "client"],
+      "ignore_watch" : ["*.zip"],
+      "watch_options": {
+        "followSymlinks": false
+      }
     }
   ],
-
-  {
-  "watch": ["server", "client"],
-  "ignore_watch" : ["*.zip"],
-  "watch_options": {
-    "followSymlinks": false
-  }
-}
 };
