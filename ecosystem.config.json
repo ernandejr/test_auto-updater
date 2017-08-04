@@ -3,18 +3,12 @@
     "name"        : "Auto-updater",
     "script"      : "server.js",
     "watch"       : true,
+    "ignore_watch" : ["*.zip"],
     "env": {
       "NODE_ENV": "development"
     },
     "env_production" : {
        "NODE_ENV": "production"
-    },
-    {
-      "watch": ["server", "client"],
-      "ignore_watch" : ["*.zip"],
-      "watch_options": {
-        "followSymlinks": false
-      }
     }
   }]
 }
