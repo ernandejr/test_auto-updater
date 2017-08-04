@@ -3,5 +3,9 @@
 	"auto-updater":{
 		"repo":"ernandejr/test_auto-updater",
 		"branch":"master"
-	}
+	},
+	"dependencies": {
+		"auto-updater": "^1.0.2",
+		"autoinstall": "^0.3.1"
+  	}
 }

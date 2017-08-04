@@ -1,3 +1,4 @@
+require('autoinstall');
 var http = require('http');
 var AutoUpdater = require('auto-updater');
 http.createServer((req, res) => {
@@ -54,6 +55,6 @@ var autoupdater = new AutoUpdater({
     res.writeHead(200, {"Content-Type": "text/xml"});
     var hello = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><main>Versão atualizada 0.0.3</main>';
     res.end(hello);
-}).listen(3000, 'localhost', function(){
+}).listen(4000, 'localhost', function(){
 	console.log("Servidor rodando na porta 3000");
 });
